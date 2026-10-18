@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project reports / screenshots artifacts
+screenshots/
+PROJECT_SUMMARY.txt
+Project_Report_*.html
+report.html
+capture_*_screenshots.js
