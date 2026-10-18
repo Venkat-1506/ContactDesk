@@ -107,8 +107,10 @@ export default function Navbar() {
             to={item.to}
             className={({ isActive }) => `mobile-bottom-nav-link ${isActive ? 'active' : ''}`}
           >
-            <Icon name={item.icon} size={19} />
-            <span>{item.label}</span>
+            <span className="mobile-bottom-nav-chip">
+              <Icon name={item.icon} size={18} />
+            </span>
+            <span className="mobile-bottom-nav-label">{item.label}</span>
           </NavLink>
         ))}
       </nav>
