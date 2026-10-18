@@ -306,11 +306,10 @@ export default function ContactDetails() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="professional-link-badge"
+                    title={link.label || link.type}
                     aria-label={`Open ${name}'s ${link.label || link.type} profile`}
                   >
-                    <Icon name={iconName} size={14} />
-                    <span>{link.label || link.type}</span>
-                    <Icon name="external" size={11} className="external-arrow" />
+                    <Icon name={iconName} size={24} />
                   </a>
                 );
               })}

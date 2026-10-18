@@ -102,8 +102,8 @@ export default function Places() {
                       </div>
                     </Link>
 
-                    {/* Touch-friendly Call action */}
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    {/* Touch-friendly Call/Email actions */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                       {person.phone && (
                         <a
                           href={`tel:${person.phone.replace(/\s+/g, '')}`}
@@ -114,7 +114,17 @@ export default function Places() {
                           <span>Call</span>
                         </a>
                       )}
-                      <Link to={`/contact/${person.id}`} style={{ color: 'var(--color-secondary-text)' }} aria-label={`View ${person.name} record`}>
+                      {person.email && (
+                        <a
+                          href={`mailto:${person.email}?subject=${encodeURIComponent('Connecting via People Atlas')}`}
+                          className="btn-action-touch mono-font"
+                          aria-label={`Email ${person.name}`}
+                        >
+                          <Icon name="email" size={14} />
+                          <span>Email</span>
+                        </a>
+                      )}
+                      <Link to={`/contact/${person.id}`} style={{ color: 'var(--color-secondary-text)', display: 'inline-flex', padding: '0.3rem' }} aria-label={`View ${person.name} record`}>
                         <Icon name="chevron-right" size={18} />
                       </Link>
                     </div>
