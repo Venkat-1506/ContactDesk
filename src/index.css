@@ -1,0 +1,99 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Color System - Premium Archival Editorial Palette */
+  --bg-primary: #EAE4D8;
+  --bg-texture: radial-gradient(circle at 50% 0%, #F5EFE4 0%, #E5DDD0 100%);
+  --surface-main: #FAF6EF;
+  --surface-secondary: #E4DDD0;
+  --surface-hover: #F0E8DC;
+  --surface-accent: #F1ECE2;
+
+  --color-border: #B5AA9A;
+  --color-border-dark: #2B2621;
+  --color-border-light: #D6CCC0;
+
+  /* Ink Typography Colors */
+  --color-primary-text: #23201C;
+  --color-secondary-text: #5A554C;
+  --color-muted-text: #867F74;
+
+  /* Rich Category Badges & Accents */
+  --color-accent-primary: #7A3E2B;  /* Burnt Terracotta */
+  --color-accent-secondary: #B4773C;/* Warm Amber */
+  --color-accent-deep: #263F3A;     /* Deep Forest Green */
+  --color-accent-slate: #3B4B59;    /* Archival Slate */
+
+  /* Status Colors */
+  --color-danger: #9E382B;
+  --color-success: #263F3A;
+
+  /* Typography Stacks */
+  --font-display: 'Bricolage Grotesque', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', SFMono-Regular, Consolas, monospace;
+
+  /* Layout Constants */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+
+  /* Elevation & Shadows */
+  --shadow-subtle: 0 2px 6px rgba(35, 32, 28, 0.05);
+  --shadow-hover: 0 4px 12px rgba(35, 32, 28, 0.08);
+}
+
+/* MANDATORY GLOBAL CSS RESET */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background: var(--bg-texture);
+  background-color: var(--bg-primary);
+  color: var(--color-primary-text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-primary-text);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.mono-font {
+  font-family: var(--font-mono);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 0.9rem;
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-primary-text);
+}

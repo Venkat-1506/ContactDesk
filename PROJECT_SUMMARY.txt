@@ -1,0 +1,89 @@
+========================================================================
+                      PEOPLE ATLAS - PROJECT OVERVIEW
+========================================================================
+
+WHAT IS PEOPLE ATLAS?
+---------------------
+People Atlas is a personal visual network explorer and archival directory 
+designed to map, organize, and explore the people in your life.
+
+Instead of a generic address book or SaaS database, People Atlas represents 
+your contacts as an interactive personal network portrait, visual map, and digital field notebook.
+
+
+WHAT DOES YOUR PROJECT DO AS OF NOW?
+------------------------------------
+
+1. NETWORK INSIGHTS (ANALYTICS REPORT PAGE)
+   - Title: "NETWORK INSIGHTS"
+   - Subtitle: "Understand your network through the patterns in your people, places, and relationships."
+   - Navbar primary link: "INSIGHTS" (routing `/insights` and `/atlas`).
+   - Dynamic Editorial Analytics & Personal Network Report calculated 100% live from localStorage contact data.
+   - Top Minimalist Information Line: 100 PEOPLE / 5 GROUPS / 15 PLACES / 20 CLOSE.
+   - Dynamic Network Snapshot: "Your contact network spans 5 groups and 15 places."
+   - Contacts by Group: Vertical bar chart showing real category distribution.
+   - Network Composition: SVG Donut chart with category percentages and hover legend.
+   - Where Your People Are: Horizontal bar chart of top locations.
+   - Relationship Mix: Frequency distribution bar chart of relationship types.
+   - People You Keep Close: Close circle share percentage & indicator bar.
+   - Contact Data Health: Completeness percentages for Phone, Email, Location, Organization, Relationship, Notes.
+   - What Stands Out: 3-5 dynamically calculated, rule-based observations.
+   - Network Balance: Classification matrix for Group Diversity, Place Diversity, Close Share, and Data Health.
+
+2. SINGLE AUTHORITATIVE "ADD PERSON" ACTION
+   - Top Navbar is the single, authoritative place for the primary "+ Add Person" action.
+
+3. PEOPLE DIRECTORY (VIEW ALL CONTACTS)
+   - Complete directory satisfying all contact management requirements.
+   - Multi-field live search across 8 attributes (`⌕ Find someone...`).
+   - Keyboard shortcut: Pressing "/" key instantly focuses search input.
+   - Alphabetical section headers (A to Z) with archival Monogram initial boxes.
+   - Swipeable text navigation tabs with active underline for mobile and desktop.
+   - Mobile contact rows: Call (`tel:`) & Email (`mailto:`) actions on left, 
+     with Heart (Favorite) and `>` Chevron icon strictly anchored at the far right end!
+
+4. PEOPLE I KEEP CLOSE (FAVORITES PAGE WITH SEARCH)
+   - One-touch star/favorite toggle to maintain an inner-circle directory.
+   - Live Search Bar on Favorites page (`⌕ Find in close people...`) with `/` shortcut.
+   - Mobile contact rows with Heart & `>` Chevron right-aligned at the far right end.
+
+5. PLACES EXPLORER
+   - Explore your personal network grouped by location/city 
+     (e.g., Chennai, Vellore, Madurai, Bengaluru).
+   - Sectional typographic headers with contact counts and direct profile links.
+
+6. RECENT ACTIVITY & CONTACT TRACKER
+   - Timeline activity journal for RECENTLY CONTACTED, RECENTLY ADDED, and RECENTLY UPDATED.
+   - "Mark as Contacted Today" button updating interaction timestamps.
+   - Relative time calculations (e.g. "Just now", "2 days ago", "14 days ago").
+
+7. PERSON RECORD (CONTACT DOSSIER)
+   - Full personal profile view featuring initial Monograms, relationship 
+     badges, phone call links (tel:), email links (mailto:), and 
+     one-click copy phone/email buttons.
+   - Complete history timestamps (Created, Last Updated, Last Contacted).
+   - Add/Edit/Delete actions with safety confirmation dialogs.
+
+8. DATA BACKUP, IMPORT & PRIVACY
+   - 100% Local Storage: Data is stored safely in your browser (localStorage). 
+     No cloud server or login required.
+   - Export & Import JSON backups.
+   - Reset sample data or clear storage with safety prompts.
+
+9. ENHANCED ARCHIVAL STYLING & ACCESSIBILITY
+   - Rich paper texture background gradient (`--bg-texture`).
+   - Dark ink typography (`#23201C`), warm terracotta (`#7A3E2B`), forest green (`#263F3A`), 
+     and archival slate (`#3B4B59`) accents.
+   - Fully responsive layout for desktop, tablet, and mobile screens without horizontal scroll.
+   - 100% local SVG icons.
+
+
+TECHNOLOGY STACK:
+-----------------
+- React 19 (User Interface)
+- React Router v7 (Navigation & Routing)
+- Vite (Build Tool & Dev Server)
+- HTML5 / Vanilla CSS (Editorial System)
+- LocalStorage API (Browser Persistence)
+
+========================================================================
